@@ -1,7 +1,19 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+
+Documentazione:
+https://ygoprodeck.com/api-guide/
+
+1. Creo un file store.js dentro la cartella src
+    - importo il metodo reactive che mi permette di creare un oggetto 
+    - importo store.js in main.vue e nei componenti
+
+2. tramite una chiamata ajax, richiedo i dati da https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0
+
+3. creo un componente card.vue
+
+4. importo il comonente card.vue in A1pp.vue
+
+5. stampo tutte le card presenti nel json in pagina dando un parametro offset in modo da non sovraccaricare la ricerca
+https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0
