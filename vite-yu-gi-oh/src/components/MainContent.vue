@@ -30,7 +30,8 @@ onMounted(async () => {
         const response = await axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
         cards.value = response.data.data
         const archetypeResponse = await axios.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
-        archetypes.value = archetypeResponse.data.nap(archetype => archetype.archetype_name)
+        console.log('Archetype Response:', archetypeResponse.data)
+        archetypes.value = archetypeResponse.data.map(archetype => archetype.archetype_name)
     } catch (error) {
         console.error('error', error)
     }
