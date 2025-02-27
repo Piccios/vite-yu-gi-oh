@@ -13,7 +13,7 @@ https://ygoprodeck.com/api-guide/
 
 3. creo un componente card.vue
 
-4. importo il comonente card.vue in A1pp.vue
+4. importo il componente card.vue in App.vue
 
 5. stampo tutte le card presenti nel json in pagina dando un parametro offset in modo da non sovraccaricare la ricerca
 https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0
